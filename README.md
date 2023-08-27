@@ -20,7 +20,7 @@ The dataset provided consists of two files, train.csv and test.csv, containing 2
 ## 🎯 Output
 Output is formatted as a CSV namely PredictionFile.csv and includes only two columns: PRODUCT_ID and PRODUCT_LENGTH. The dimensions of the file should be 734,736 rows by 2 columns
 
-## Approach 1 : Machine Learning
+## ✏️ Approach 1 : Machine Learning
 ### Data pre-processing
 - Removal of missing values
 - Replacement of NaN values with empty strings
@@ -48,7 +48,7 @@ Analysis demonstrated that the Ridge Regressor delivered the most favorable outc
 ### Prediction
 Once our model was chosen, we performed predictions and subsequently reverted them to their original units i.e. nullify logp during the initial data preprocessing stage, which effectively managed outliers. Achieved accuracy nearly to 75%.
 
-## Approach 2 : Deep Learning
+## ✏️ Approach 2 : Deep Learning
 - Data pre-processing is same as stated above in ML approach
 - Split the data into five folds using k-fold technique
 - Uses BERT to tokenize the text with special tokens, padding and truncation
