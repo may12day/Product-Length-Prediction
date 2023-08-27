@@ -47,3 +47,20 @@ Analysis demonstrated that the Ridge Regressor delivered the most favorable outc
 
 ### Prediction
 Once our model was chosen, we performed predictions and subsequently reverted them to their original units i.e. nullify logp during the initial data preprocessing stage, which effectively managed outliers. Achieved accuracy nearly to 75%.
+
+## Approach 2 : Deep Learning
+- Data pre-processing is same as stated above in ML approach
+- Split the data into five folds using k-fold technique
+- Uses BERT to tokenize the text with special tokens, padding and truncation
+- For Model, uses 'bert base uncased' pre-trained model which is heavily trained on English texts
+- Used Cross entropy loss as criterion and SGD as an optimizer
+- For Prediction, accuracy is coming around 78%
+
+## ⛏️ Tools used
+- Python
+- Pandas
+- Numpy
+- Scikit-learn
+- Natural Language Processing
+- PyTorch
+- Transformers
